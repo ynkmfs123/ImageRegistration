@@ -57,14 +57,14 @@ def AlignSeriesImage(fixed_data, moving_data):
 if __name__ == "__main__":
 
     # set file path
-    input_folder = '/data/HA/'
+    input_folder = '/Volumes/Others/观测数据/destr_libo/'
     output_folder = os.path.join(input_folder, 'gre/')
 
     if not os.path.exists(output_folder):
         os.makedirs(output_folder)
 
     # obtain all 'fits' file
-    fits_files = sorted([f for f in os.listdir(input_folder) if f.endswith('.fits')])
+    fits_files = sorted([f for f in os.listdir(input_folder) if f.endswith('.fts')])
 
     first_file_name = os.path.join(input_folder, fits_files[0])
 
@@ -83,7 +83,7 @@ if __name__ == "__main__":
 
     print(f"Image saved to {reference_file_name}")
 
-    for fits_file in fits_files[1:]:
+    for fits_file in fits_files[1:4]:
         input_path = os.path.join(input_folder, fits_file)
         with fits.open(input_path) as hdul:
             head = hdul[0].header

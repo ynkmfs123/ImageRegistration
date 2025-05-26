@@ -27,7 +27,7 @@ def fits_to_video(fits_folder, output_video, fps=10):
         isColor=True
     )
 
-    for fname in fits_files[1:100]:
+    for fname in fits_files[1:]:
         frame = read_fits(os.path.join(fits_folder, fname))
         frame_color = cv2.cvtColor(frame, cv2.COLOR_GRAY2BGR)
         video_writer.write(frame_color)
