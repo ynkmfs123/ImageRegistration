@@ -83,7 +83,7 @@ if __name__ == "__main__":
 
     print(f"Image saved to {reference_file_name}")
 
-    for fits_file in fits_files[1:100]:
+    for fits_file in fits_files[1:]:
         input_path = os.path.join(input_folder, fits_file)
         with fits.open(input_path) as hdul:
             head = hdul[0].header
