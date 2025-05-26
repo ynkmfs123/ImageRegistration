@@ -56,8 +56,8 @@ def AlignSeriesImage(fixed_data, moving_data):
 
 if __name__ == "__main__":
 
-    # set path
-    input_folder = '/data/HA/Disk_Center/'
+    # set file path
+    input_folder = '/data/HA/'
     output_folder = os.path.join(input_folder, 'gre/')
 
     if not os.path.exists(output_folder):
