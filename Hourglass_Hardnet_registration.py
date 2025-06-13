@@ -1,3 +1,4 @@
+
 import cv2
 import matplotlib.pyplot as plt
 import numpy as np
@@ -57,7 +58,7 @@ def AlignSeriesImage(fixed_data, moving_data):
 if __name__ == "__main__":
 
     # set file path
-    input_folder = '/Volumes/Others/观测数据/destr_libo/'
+    input_folder = '/Volumes/Others/observed_data/destr_libo/'
     output_folder = os.path.join(input_folder, 'gre/')
 
     if not os.path.exists(output_folder):
