@@ -13,6 +13,7 @@ This repository provides the source code, sample data, and animations used for t
 /                # Source code implementing the GRE registration framework
 /data            # Example solar image data for testing
 /video           # Demo animations showing registration results
+/modules         # Required modules for running the GRE registration program
 README.md
 LICENSE
 ```
@@ -30,6 +31,8 @@ git clone https://github.com/ynkmfs123/ImageRegistration.git
 
 3. Use data in `/data` for quick tests, and view animations in `/video` to see qualitative results.
 
+4. The GRE program depends on essential Python modules stored in the `/modules` directory.
+   
 ---
 
 ##  About
